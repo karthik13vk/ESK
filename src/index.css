@@ -1,0 +1,122 @@
+@import "tailwindcss" important;
+@import "./assets/font/bahamas/Bahamas.css";
+@import "./assets/font/Roboto/roboto.css";
+@import "./assets/font/BreathySignature/BreathySignature.css";
+@theme {
+  --color-primary: #ddac78;
+  --color-primarytwo: #fde1c4;
+  --color-secondary: #2c7d2c;
+  --color-bg_1: #f1ddc8;
+  --color-bg_2: #fcf5eb;
+  --color-text_1: #1f3d3c;
+  --color-text_2: #1a5d1a;
+  --font-*: initial;
+  --font-primary: "Bahamas Normal";
+  --font-secondary: "Roboto";
+  --font-third: "Breathing Personal Use";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding-left: 0 !important;
+  overflow-x: hidden;
+  background-color: rgb(245, 245, 245);
+  font-family: "Bahamas Normal";
+  box-sizing: border-box;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.line-video-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddac78;
+    -webkit-border-radius: 100%;
+    -khtml-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border-radius: 100%;
+    animation: wptb_squares 3.9s linear 0s infinite;
+    -webkit-animation: wptb_squares 3.9s linear 0s infinite;
+    -ms-animation: wptb_squares 3.9s linear 0s infinite;
+    -o-animation: wptb_squares 3.9s linear 0s infinite;
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
+.line-video-animation.line-video-2 {
+    -webkit-animation-delay: 1.3s;
+    -moz-animation-delay: 1.3s;
+    -o-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+.line-video-animation.line-video-3 {
+    -webkit-animation-delay: 2.6s;
+    -moz-animation-delay: 2.6s;
+    -o-animation-delay: 2.6s;
+    animation-delay: 2.6s;
+}
+@keyframes wptb_squares {
+    0% {
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity: 0;
+    }
+    20% {
+        -webkit-transform: scale(1.24);
+        -moz-transform: scale(1.24);
+        -o-transform: scale(1.24);
+        transform: scale(1.24);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: scale(2.1);
+        -moz-transform: scale(2.1);
+        -o-transform: scale(2.1);
+        transform: scale(2.1);
+        opacity: 0;
+    }
+}
+.fade-swiper .swiper-slide {
+  position: relative;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+.fade-in.delay-200 {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#smooth-wrapper {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#smooth-content {
+  will-change: transform;
+}
