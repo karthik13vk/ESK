@@ -120,3 +120,18 @@ body {
 #smooth-content {
   will-change: transform;
 }
+
+.header {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transform-origin: top;
+}
+
+.header.hide {
+  transform: perspective(300px) rotateX(-90deg);
+  opacity: 0;
+}
+
+.header.show {
+  transform: perspective(300px) rotateX(0deg);
+  opacity: 1;
+}

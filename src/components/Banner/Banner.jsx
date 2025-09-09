@@ -1,3 +1,4 @@
+import React, { useMemo } from 'react';
 import { useEffect, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
@@ -10,23 +11,7 @@ import banner1 from '../../assets/img/banner1.jpg';
 import banner2 from '../../assets/img/banner2.jpg';
 import banner3 from '../../assets/img/banner3.jpg';
 
-const slides = [
-  {
-    image: banner1,
-    title: 'Capturing Emotions',
-    subtitle: 'Every shot tells a story',
-  },
-  {
-    image: banner2,
-    title: 'Creative Perspectives',
-    subtitle: 'Turning moments into memories',
-  },
-  {
-    image: banner3,
-    title: 'Timeless Memories',
-    subtitle: 'Framed in perfection',
-  },
-];
+
 
 const Banner = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -62,6 +47,23 @@ const Banner = () => {
       );
     }
   }, [activeIndex]);
+const slides = useMemo(() => [
+  {
+    image: banner1,
+    title: 'Capturing Emotions',
+    subtitle: 'Every shot tells a story',
+  },
+  {
+    image: banner2,
+    title: 'Creative Perspectives',
+    subtitle: 'Turning moments into memories',
+  },
+  {
+    image: banner3,
+    title: 'Timeless Memories',
+    subtitle: 'Framed in perfection',
+  },
+], []);
 
   return (
     <div>
@@ -82,6 +84,7 @@ const Banner = () => {
             <div className="relative w-full h-screen">
               <img
                 src={slide.image}
+                 loading="lazy"
                 alt={slide.title}
                 className="object-cover w-full h-full"
               />

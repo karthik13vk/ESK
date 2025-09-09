@@ -57,8 +57,8 @@ const Features = () => {
                                                 className={`feature-img lg:max-w-[950px] lg:absolute right-[-25%] bottom-[-60px] z-[1] transition-all duration-500 ${index === activeIndex ? 'opacity-100 visible' : 'opacity-0 invisible'
                                                     }`}
                                             >
-                                                <img src={feature.banner} alt="img" />
-                                                <div className="feature-img-content lg:absolute bottom-0 left-[-100px] right-0 flex items-end justify-between lg:flex-row  flex-col gap-2 justify-center">
+                                                <img src={feature.banner} alt="img"   loading="lazy" />
+                                                <div className="feature-img-content lg:absolute bottom-0 left-[-100px] right-0 flex items-end justify-between lg:flex-row  flex-col gap-2">
                                                     <div className="feature-item-content flex-shrink-0 max-w-[400px]
                                                      bg-primarytwo lg:p-[40px] p-20 origin-bottom transition-all">
                                                         <p>

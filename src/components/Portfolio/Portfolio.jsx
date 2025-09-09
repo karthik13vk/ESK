@@ -1,6 +1,6 @@
 import '@fancyapps/ui/dist/fancybox/fancybox.css';
 import { Fancybox } from '@fancyapps/ui';
-import { useEffect } from 'react';
+import { useEffect, useMemo } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Grid, Box, Button, Paper, Container, } from '@mui/material';
@@ -12,6 +12,17 @@ import portfolio5 from './../../assets/img/profolio5.jpg';
 import portfolio6 from './../../assets/img/profolio6.jpg';
 
 const Portfolio = () => {
+
+    const portfolioImages = useMemo(() => [
+        portfolio1,
+        portfolio6,
+        portfolio2,
+        portfolio3,
+        portfolio4,
+        portfolio5,
+        portfolio1,
+        portfolio3,
+    ], []);
     useEffect(() => {
         Fancybox.bind('[data-fancybox="gallery"]', {
             // optional config
@@ -48,11 +59,12 @@ const Portfolio = () => {
                     <Grid container spacing={4} columns={12} className="" alignItems="center">
                         <Grid item size={{ xs: 12, lg: 12 }} alignItems="center" data-aos="fade-up">
                             <div className="block gap-4 lg:columns-3 columns-1 md:columns-2">
-                                {[portfolio1, portfolio6, portfolio2, portfolio3, portfolio4, portfolio5, portfolio1, portfolio3].map((img, index) => (
-                                    <div key={index} className="mb-3.5  inline-block w-full overflow-hidden">
+                                {portfolioImages.map((img, index) => (
+                                    <div key={index} className="mb-3.5 inline-block w-full overflow-hidden">
                                         <a href={img} data-fancybox="gallery">
                                             <img
                                                 src={img}
+                                                loading="lazy"
                                                 alt={`portfolio-${index}`}
                                                 className="object-cover w-full h-full transition-transform duration-300 hover:scale-110"
                                             />

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useMemo  } from 'react'
 import { Grid, Box, Button, Paper, Container, } from '@mui/material';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,56 +20,56 @@ import icon8 from './../../assets/img/icon/icon-8.svg';
 import icon88 from './../../assets/img/icon/icon-8-3.svg';
 const Services = () => {
 
-  const services = [
-    {
-      id: 1,
-      icon: icon,
-      iconHover: icon1,
-      title: 'Wedding Photography',
-    },
-    {
-      id: 2,
-      icon: icon2,
-      iconHover: icon22,
-      title: 'Drone Cinematography',
-    },
-    {
-      id: 3,
-      icon: icon3,
-      iconHover: icon33,
-      title: 'Wedding Cinematography',
-    },
-    {
-      id: 4,
-      icon: icon4,
-      iconHover: icon44,
-      title: 'Personal Portfolio Shoot',
-    },
-    {
-      id: 5,
-      icon: icon5,
-      iconHover: icon55,
-      title: 'Wildlife Photography',
-    },
-    {
-      id: 6,
-      icon: icon6,
-      iconHover: icon66,
-      title: 'Studio Photography',
-    },
-    {
-      id: 7,
-      icon: icon7,
-      iconHover: icon77,
-      title: 'Photography Archive',
-    },
-    {
-      id: 8,
-      icon: icon8,
-      iconHover: icon88,
-      title: 'Photography Training',
-    },
-  ];
+const services = useMemo(() => [
+  {
+    id: 1,
+    icon: icon,
+    iconHover: icon1,
+    title: 'Wedding Photography',
+  },
+  {
+    id: 2,
+    icon: icon2,
+    iconHover: icon22,
+    title: 'Drone Cinematography',
+  },
+  {
+    id: 3,
+    icon: icon3,
+    iconHover: icon33,
+    title: 'Wedding Cinematography',
+  },
+  {
+    id: 4,
+    icon: icon4,
+    iconHover: icon44,
+    title: 'Personal Portfolio Shoot',
+  },
+  {
+    id: 5,
+    icon: icon5,
+    iconHover: icon55,
+    title: 'Wildlife Photography',
+  },
+  {
+    id: 6,
+    icon: icon6,
+    iconHover: icon66,
+    title: 'Studio Photography',
+  },
+  {
+    id: 7,
+    icon: icon7,
+    iconHover: icon77,
+    title: 'Photography Archive',
+  },
+  {
+    id: 8,
+    icon: icon8,
+    iconHover: icon88,
+    title: 'Photography Training',
+  },
+], []);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -114,11 +114,13 @@ const Services = () => {
                     <img
                       src={service.icon}
                       alt="img"
+                        loading="lazy"
                       className='transition-all duration-500 ease-in-out scale-100 opacity-100 normalimg group-hover:opacity-0 group-hover:scale-0'
                     />
                     <img
                       src={service.iconHover}
                       alt="img"
+                        loading="lazy"
                       className='absolute top-0 left-0 transition-all duration-500 ease-in-out scale-0 opacity-0 hover-img group-hover:opacity-100 group-hover:scale-100'
                     />
                   </div>
