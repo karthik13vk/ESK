@@ -14,9 +14,9 @@ const features = [
     { title: "Best Quality Photos", banner: banner4, desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit obcaecati eaque distinctio ab laboriosam, tempora modi dolor id." },
 ];
 const Features = () => {
-      useEffect(() => {
-        AOS.init({ duration: 1000 });
-      }, []);
+    //   useEffect(() => {
+    //     AOS.init({  startEvent: 'DOMContentLoaded', duration: 1000 });
+    //   }, []);
     const [activeIndex, setActiveIndex] = useState(0); // Default active item
 
     const handleHover = (index) => {
@@ -30,7 +30,7 @@ const Features = () => {
                 <Container>
                     <Grid container spacing={4} columns={12} className="" alignItems="center">
                         <Grid item size={{ xs: 12, lg: 12, md: 12 }} alignItems="center">
-                            <div className='flex flex-col items-start gap-5 heading-section lg:flex-col' data-aos="fade-up">
+                            <div className='flex flex-col items-start gap-5 heading-section lg:flex-col' >
                                 <h6 className="relative text-white px-0.5 inline-block z-[9999] before:content-[''] before:absolute before:left-0 before:top-0 before:h-[20px] before:w-full before:bg-primary before:-z-10" >
                                     Our Features
                                 </h6>
@@ -46,7 +46,8 @@ const Features = () => {
                                     // onClick={() => setActiveIndex(index)} // uncomment for click
                                     >
                                         <div className="flex flex-col items-center justify-between lg:flex-row">
-                                            <div className={`feature-box lg:w-[40%] w-full flex items-center gap-10 text-[24px] pl-1.5 font-medium leading-[36px] py-6 transition-all duration-300 ${index === activeIndex ? 'bg-red-50 border-l-4 border-primary' : ''}`}>
+                                            <div className={`feature-box lg:w-[40%] w-full flex items-center gap-10 text-[24px] pl-1.5
+                                             font-medium leading-[36px] py-6 transition-all duration-300 ${index === activeIndex ? 'bg-red-50 border-l-4 border-primary' : ''}`}>
                                                 <h3
                                                     className={`mb-2 text-2xl font-semibold transition-all ${index === activeIndex ? 'text-primary' : 'text-black'
                                                         }`}>

@@ -29,7 +29,7 @@ const Socialmedia = () => {
                         className='max-w-36 md:max-w-full'
                         data-aos="fade-up"
                         data-aos-duration="1500"
-                        data-aos-delay={index * 300} // 300ms delay increment
+                        data-aos-delay={index * 300}
                     >
                         <img src={img} alt={`social-${index}`} loading="lazy" className='object-cover w-full' />
                     </div>

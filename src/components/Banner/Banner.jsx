@@ -7,9 +7,11 @@ import gsap from 'gsap';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
-import banner1 from '../../assets/img/banner1.jpg';
-import banner2 from '../../assets/img/banner2.jpg';
-import banner3 from '../../assets/img/banner3.jpg';
+import banner1 from '../../assets/img/banner_1.jpg';
+import banner2 from '../../assets/img/banner_2.jpg';
+import banner3 from '../../assets/img/banner_3.jpg';
+import banner4 from '../../assets/img/banner_4.jpg';
+import banner5 from '../../assets/img/banner_5.jpg';
 
 
 
@@ -60,6 +62,16 @@ const slides = useMemo(() => [
   },
   {
     image: banner3,
+    title: 'Timeless Memories',
+    subtitle: 'Framed in perfection',
+  },
+  {
+    image: banner4,
+    title: 'Timeless Memories',
+    subtitle: 'Framed in perfection',
+  },
+  {
+    image: banner5,
     title: 'Timeless Memories',
     subtitle: 'Framed in perfection',
   },

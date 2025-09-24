@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo  } from 'react'
+import React, { useEffect, useMemo } from 'react'
 import { Grid, Box, Button, Paper, Container, } from '@mui/material';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -20,56 +20,57 @@ import icon8 from './../../assets/img/icon/icon-8.svg';
 import icon88 from './../../assets/img/icon/icon-8-3.svg';
 const Services = () => {
 
-const services = useMemo(() => [
-  {
-    id: 1,
-    icon: icon,
-    iconHover: icon1,
-    title: 'Wedding Photography',
-  },
-  {
-    id: 2,
-    icon: icon2,
-    iconHover: icon22,
-    title: 'Drone Cinematography',
-  },
-  {
-    id: 3,
-    icon: icon3,
-    iconHover: icon33,
-    title: 'Wedding Cinematography',
-  },
-  {
-    id: 4,
-    icon: icon4,
-    iconHover: icon44,
-    title: 'Personal Portfolio Shoot',
-  },
-  {
-    id: 5,
-    icon: icon5,
-    iconHover: icon55,
-    title: 'Wildlife Photography',
-  },
-  {
-    id: 6,
-    icon: icon6,
-    iconHover: icon66,
-    title: 'Studio Photography',
-  },
-  {
-    id: 7,
-    icon: icon7,
-    iconHover: icon77,
-    title: 'Photography Archive',
-  },
-  {
-    id: 8,
-    icon: icon8,
-    iconHover: icon88,
-    title: 'Photography Training',
-  },
-], []);
+  const services = useMemo(() => [
+    {
+      id: 1,
+      icon: icon,
+      iconHover: icon1,
+      title: 'Wedding Photography',
+    },
+    {
+      id: 2,
+      icon: icon2,
+      iconHover: icon22,
+      title: 'Drone Cinematography',
+    },
+    {
+      id: 3,
+      icon: icon3,
+      iconHover: icon33,
+      title: 'Wedding Cinematography',
+    },
+    {
+      id: 4,
+      icon: icon8,
+      iconHover: icon88,
+      title: 'Photography Training',
+
+    },
+    {
+      id: 5,
+      icon: icon4,
+      iconHover: icon44,
+      title: 'Personal Portfolio Shoot',
+    },
+    // {
+    //   id: 6,
+    //   icon: icon6,
+    //   iconHover: icon66,
+    //   title: 'Studio Photography',
+    // },
+    // {
+    //   id: 7,
+    //   icon: icon7,
+    //   iconHover: icon77,
+    //   title: 'Photography Archive',
+    // },
+    // {
+    //   id: 8,
+    //   icon: icon8,
+    //   iconHover: icon88,
+    //   title: 'Photography Training',
+    // },
+  ], []);
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
@@ -78,7 +79,7 @@ const services = useMemo(() => [
     <div className='bg-bg_1'>
       <Box sx={{ py: 10, width: '100%', zIndex: 999 }}>
         <Container>
-          <Grid container spacing={4} columns={12} justifyContent={'center'} className="" >
+          <Grid container spacing={4} columns={10} justifyContent={'center'} className="" >
             <Grid item size={{ xs: 12, lg: 8 }} alignItems="center" justifyContent={'center'}>
               <div className='mb-6 heading-section d-flex' data-aos="fade-up" style={{
                 display: "flex",
@@ -87,12 +88,13 @@ const services = useMemo(() => [
                 alignItems: "center",
                 gap: "20px"
               }}>
-                <h6 className="relative  z-[9999]  text-white px-0.5 inline-block before:content-[''] before:absolute before:left-0 before:top-0 before:h-[20px] before:w-full before:bg-primary before:-z-10" >
+                <h6 className="inline-block relative px-2 text-sm font-normal text-white uppercase tracking-wide z-10 before:content-[''] before:absolute before:inset-0 before:-z-10 before:bg-primary before:rounded-md">
                   Our Photography
                 </h6>
                 <h1 className='mb-2 text-4xl text-normal font-third'>Services Us</h1>
                 <p className='text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sint earum aliquam nihil cumque, omnis tempora pariatur quos! Magni porro consequatur voluptatem optio esse assumenda iste labore a, delectus dignissimos!</p>
               </div>
+              
             </Grid>
 
           </Grid>
@@ -102,7 +104,7 @@ const services = useMemo(() => [
               <Grid
                 item
                 key={service.id}
-               size={{ xs: 6, lg: 3, md: 6 }}
+                size={{ xs: 6, lg: 3, md: 6 }}
                 alignItems="center"
                 justifyContent={'center'}
                 data-aos="fade-up"
@@ -114,13 +116,13 @@ const services = useMemo(() => [
                     <img
                       src={service.icon}
                       alt="img"
-                        loading="lazy"
+                      loading="lazy"
                       className='transition-all duration-500 ease-in-out scale-100 opacity-100 normalimg group-hover:opacity-0 group-hover:scale-0'
                     />
                     <img
                       src={service.iconHover}
                       alt="img"
-                        loading="lazy"
+                      loading="lazy"
                       className='absolute top-0 left-0 transition-all duration-500 ease-in-out scale-0 opacity-0 hover-img group-hover:opacity-100 group-hover:scale-100'
                     />
                   </div>

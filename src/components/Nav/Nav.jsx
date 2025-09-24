@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Box, Container, Grid } from '@mui/material';
 import { TfiMenuAlt } from 'react-icons/tfi';
 import { FaPhoneAlt } from 'react-icons/fa';
+import mainlogo from './../../assets/img/mainlogo.png';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [scrollDir, setScrollDir] = useState('up'); // 'up' or 'down'
@@ -38,7 +40,7 @@ const Nav = () => {
         <Grid container alignItems="center" justifyContent="space-between">
           <Grid item xs={2} md={2}>
             <Box className="flex items-center justify-center text-2xl text-white transition-transform rounded-full cursor-pointer w-11 h-11 hover:scale-110 bg-primary">
-              <TfiMenuAlt />
+             <Link   to="/"> <TfiMenuAlt /></Link> 
             </Box>
           </Grid>
           <Grid item xs={2} md={2}>
@@ -50,7 +52,10 @@ const Nav = () => {
                 textShadow: '0px 5px Black',
               }}
             >
-              <h2 className="mb-4 font-serif text-3xl font-bold">📸 ESK Studio</h2>
+              <h2 className="font-serif text-3xl font-bold w-[200px] bg-white/20 rounded-md">
+              <Link   to="/"><img src={mainlogo} alt="img" /></Link> 
+              
+              </h2>
             </Box>
           </Grid>
           <Grid item xs={2} md={2}>

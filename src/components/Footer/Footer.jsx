@@ -1,25 +1,27 @@
 import React from "react";
 import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa';
-
+import footerlogo from './../../assets/img/footerlogo.png';
 const socialIcons = [
-    { icon: <FaInstagram />, href: "#" },
-    { icon: <FaFacebookF />, href: "#" },
-    { icon: <FaTwitter />, href: "#" },
-    { icon: <FaPinterestP />, href: "#" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/esk2photography/" },
+    { icon: <FaFacebookF />, href: "https://www.facebook.com/keerthivasneskncc" },
+    // { icon: <FaTwitter />, href: "#" },
+    // { icon: <FaPinterestP />, href: "#" },
 ];
 const Footer = () => {
     return (
         <footer className="relative px-6 py-20 overflow-hidden text-white bg-black md:px-24">
             {/* Background Image with overlay */}
-            <div className="absolute inset-0 z-0 bg-center bg-cover opacity-20 blur-sm" style={{ backgroundImage: "url('/images/footer-bg.jpg')" }}></div>
-            <div className="absolute inset-0 z-0 bg-black/80 backdrop-blur-sm"></div>
+            <div className="relative inset-0 z-0 bg-center bg-cover opacity-20 blur-sm" style={{ backgroundImage: "url('/images/footer-bg.jpg')" }}></div>
+            <div className="relative inset-0 z-0 bg-black/80 backdrop-blur-sm"></div>
 
             {/* Content */}
             <div className="relative z-10 grid grid-cols-1 gap-12 mx-auto max-w-7xl sm:grid-cols-2 md:grid-cols-4">
 
                 {/* Brand */}
                 <div>
-                    <h2 className="mb-4 font-serif text-3xl font-bold">📸 ESK Studio</h2>
+                    <h2 className="mb-4 font-serif text-3xl font-bold">
+                    <img src={footerlogo} alt="img" />
+                    </h2>
                     <p className="text-sm leading-relaxed text-gray-400">
                         Capturing authentic moments through our lens, one frame at a time.
                     </p>
@@ -40,8 +42,10 @@ const Footer = () => {
                 <div>
                     <h3 className="mb-4 text-lg font-semibold tracking-wide uppercase">Contact</h3>
                     <ul className="space-y-2 text-sm text-gray-400">
-                        <li>Email: <a href="mailto:hello@snapstudio.com" className="text-white hover:text-primary ">hello@eskstudio.com</a></li>
-                        <li>Phone: <a href="tel:+1234567890" className="text-white hover:text-primary "> (+91) 9547894561</a></li>
+                        <li>Email: <a href="mailto:esk2photography@gmail.com
+" className="text-white hover:text-primary ">esk2photography@gmail.com
+</a></li>
+                        <li>Phone: <a href="tel:+91 8220139675" className="text-white hover:text-primary "> (+91) 8220139675</a></li>
                         <li>India, Erode</li>
                     </ul>
                 </div>
