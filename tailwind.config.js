@@ -26,7 +26,15 @@ export default {
       animation: {
         wptb_squares: "wptb_squares 3.9s linear infinite",
       },
+       screens: {
+        custom992: '992px',
+      },
     },
+     colors: {
+        gold: {
+          DEFAULT: '#C68313',
+        },
+      },
   },
   plugins: {
     "@tailwindcss/postcss": {},
