@@ -49,9 +49,9 @@ useEffect(() => {
             </div>
             <div className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
                 <div className="relative group w-fit" data-aos="fade-up" data-aos-duration="1500">
-                    <button className="relative z-10 px-6 py-2 font-semibold text-white transition-all duration-300 transform rounded-lg shadow-xl bg-gradient-to-r from-[#d9a15d] via-[#ddac78] to-[#eec295] group-hover:scale-105 group-hover:shadow-2xl">
+                    <a href='https://www.instagram.com/esk2photography/' className="relative z-10 px-6 py-2 font-semibold text-white transition-all duration-300 transform rounded-lg shadow-xl bg-gradient-to-r from-[#d9a15d] via-[#ddac78] to-[#eec295] group-hover:scale-105 group-hover:shadow-2xl">
                         Follow Us On Instagram
-                    </button>
+                    </a>
                     <span className="absolute inset-0 z-0 transition-all duration-500 scale-100 rounded-lg opacity-50 blur-md bg-gradient-to-r from-[#d9a15d] via-[#ddac78] to-[#eec295] group-hover:scale-110 group-hover:opacity-70"></span>
                 </div>
             </div>

@@ -1,10 +1,10 @@
 import React from "react";
-import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP, FaYoutube } from 'react-icons/fa';
 import footerlogoimg from './../../assets/img/FooterLogo.PNG';
 const socialIcons = [
     { icon: <FaInstagram />, href: "https://www.instagram.com/esk2photography/" },
     { icon: <FaFacebookF />, href: "https://www.facebook.com/keerthivasneskncc" },
-    // { icon: <FaTwitter />, href: "#" },
+    { icon: <FaYoutube />, href: "https://www.youtube.com/@eskphotography1329" },
     // { icon: <FaPinterestP />, href: "#" },
 ];
 const Footer = () => {
@@ -20,7 +20,7 @@ const Footer = () => {
                 {/* Brand */}
                 <div>
                     <h2 className="mb-4 font-serif text-3xl font-bold">
-                    <img src={footerlogoimg} alt="img" />
+                        <img src={footerlogoimg} alt="img" />
                     </h2>
                     <p className="text-sm leading-relaxed text-gray-400">
                         Capturing authentic moments through our lens, one frame at a time.
@@ -44,7 +44,7 @@ const Footer = () => {
                     <ul className="space-y-2 text-sm text-gray-400">
                         <li>Email: <a href="mailto:esk2photography@gmail.com
 " className="text-white hover:text-primary ">esk2photography@gmail.com
-</a></li>
+                        </a></li>
                         <li>Phone: <a href="tel:+91 8220139675" className="text-white hover:text-primary "> (+91) 8220139675</a></li>
                         <li>India, Erode</li>
                     </ul>
