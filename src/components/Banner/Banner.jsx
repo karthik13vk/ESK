@@ -7,11 +7,11 @@ import gsap from 'gsap';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
-import banner1 from '../../assets/img/banner_1.jpg';
-import banner2 from '../../assets/img/banner_2.jpg';
-import banner3 from '../../assets/img/banner_3.jpg';
-import banner4 from '../../assets/img/banner_4.jpg';
-import banner5 from '../../assets/img/banner_5.jpg';
+import banner1 from '../../assets/img/banner_1.JPG';
+import banner2 from '../../assets/img/banner_2.JPG';
+import banner3 from '../../assets/img/banner_3.JPG';
+import banner4 from '../../assets/img/banner_4.JPG';
+import banner5 from '../../assets/img/banner_5.JPG';
 
 
 
