@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa';
-import footerlogo from './../../assets/img/footerlogo.png';
+import footerlogoimg from './../../assets/img/footerlogo.png';
 const socialIcons = [
     { icon: <FaInstagram />, href: "https://www.instagram.com/esk2photography/" },
     { icon: <FaFacebookF />, href: "https://www.facebook.com/keerthivasneskncc" },
@@ -20,7 +20,7 @@ const Footer = () => {
                 {/* Brand */}
                 <div>
                     <h2 className="mb-4 font-serif text-3xl font-bold">
-                    <img src={footerlogo} alt="img" />
+                    <img src={footerlogoimg} alt="img" />
                     </h2>
                     <p className="text-sm leading-relaxed text-gray-400">
                         Capturing authentic moments through our lens, one frame at a time.
