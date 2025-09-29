@@ -8,7 +8,7 @@ import Portfolioinner from '../components/Portfolio/Portfolioinner'
 import Review from '../components/Review/Review'
 import Features from '../components/Features/Features'
 import Contact from '../components/Contact/Contact'
-import Socialmedia from '../components/socialmedia/Socialmedia'
+import Socialmedia from './../components/Socialmedia/Socialmedia'
 
 const Home = () => {
     return (
