@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Fancybox } from "@fancyapps/ui";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
 import { Grid, Box, Button, Paper, Container, } from '@mui/material';
-import videoimg from './../../assets/img/videobg.PNG';
+import VideoBG from './../../assets/img/videobg.png';
 import { FaPlay } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -33,7 +33,7 @@ const Video = () => {
                 <Container maxWidth={false}>
                     <Grid container spacing={0} columns={12} className="" alignItems="center">
                         <Grid item size={{ xs: 12, lg: 12 }} alignItems="center" 
-                            style={{ backgroundImage: `url(${videoimg})`,  backgroundAttachment: 'fixed', }}
+                            style={{ backgroundImage: `url(${VideoBG})`,  backgroundAttachment: 'fixed', }}
                             className="bg-no-repeat bg-center bg-cover h-[700px] flex items-center justify-center relative">
                             <div className="absolute z-[1] text-center top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-nowrap items-center">
                                 <Button className='p-5 text-white bg-primary rounded-full shadow-lg hover:bg-primarytwo w-[70px] 
