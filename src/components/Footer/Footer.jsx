@@ -1,6 +1,6 @@
 import React from "react";
 import { FaInstagram, FaFacebookF, FaTwitter, FaPinterestP } from 'react-icons/fa';
-import footerlogoimg from './../../assets/img/Footerlogo.png';
+import footerlogoimg from './../../assets/img/FooterLogo.png';
 const socialIcons = [
     { icon: <FaInstagram />, href: "https://www.instagram.com/esk2photography/" },
     { icon: <FaFacebookF />, href: "https://www.facebook.com/keerthivasneskncc" },
