@@ -1,6 +1,6 @@
 import React from 'react';
 import './Preloader.css';
-import preloaderimg from './../../assets/img/FooterLogo.png';
+import preloaderimg from './../../assets/img/preloader.png';
 
 const Preloader = () => {
   return (
