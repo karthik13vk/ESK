@@ -1,13 +1,13 @@
 import React from 'react';
 import './Preloader.css';
-import preloaderimg from './../../assets/img/preloader.png';
+import preloaderImg from './../../assets/img/preloader.PNG';
 
 const Preloader = () => {
   return (
     // <div className="modern-preloader">
     //   <div className="loader-content">
     //     <h1 className="w-50 loader-title">
-    //       <img src={preloaderimg} alt="img" />
+    //       <img src={preloaderImg} alt="img" />
     //     </h1>
     //     <div className="loader-bar">
     //       <div className="bar-fill"></div>
@@ -16,7 +16,7 @@ const Preloader = () => {
     // </div>
      <div className="heartbeat-preloader">
       <div className="heartbeat-wrapper">
-        <img src={preloaderimg} alt="Loading" className="heartbeat-logo" />
+        <img src={preloaderImg} alt="Loading" className="heartbeat-logo" />
         {/* <p className="heartbeat-text">Loading...</p> */}
       </div>
     </div>
